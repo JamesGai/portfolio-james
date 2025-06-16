@@ -1,0 +1,7 @@
+{
+  "name": "portfolio-james",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
