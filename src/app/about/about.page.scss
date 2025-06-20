@@ -2,6 +2,37 @@ ion-content {
   --background: #121212;
 }
 
+.about-content {
+    padding: 15px;
+}
+
+.about-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex-shrink: 0;
+}
+
+.about-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #00ffc3;
+  box-shadow: 0 0 12px rgba(0, 255, 195, 0.3);
+}
+
 ion-card {
   background-color: #1f1f1f;
   border-radius: 16px;
