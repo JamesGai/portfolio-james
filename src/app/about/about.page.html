@@ -1,133 +1,130 @@
 <ion-content [fullscreen]="true" class="ion-padding">
   <!-- Summary Section -->
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>About Me</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <p>
-        I am a highly motivated and enthusiastic graduate software engineer with
-        a strong foundation in full-stack development, machine learning, and
-        cloud technologies. I have proficiency in modern frameworks like
-        Angular/Ionic, React, and .NET Core, with solid knowledge of Python,
-        JavaScript, and C#. Recognizing for academic excellence and research
-        publication, with a commitment to agile methodologies, teamwork, and
-        continuous learning is what gives me confidence.
-      </p>
-    </ion-card-content>
-  </ion-card>
+  <div class="card-wrapper">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>About Me</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          I am a highly motivated and enthusiastic graduate software engineer
+          with a strong foundation in full-stack development, machine learning,
+          and cloud technologies. I have proficiency in modern frameworks like
+          Angular/Ionic, React, and .NET Core, with solid knowledge of Python,
+          JavaScript, and C#. Recognizing for academic excellence and research
+          publication, with a commitment to agile methodologies, teamwork, and
+          continuous learning is what gives me confidence.
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </div>
 
   <!-- Skills Section -->
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Skills</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-grid>
-        <ion-row>
-          <ion-col size="4" class="skill-item">
-            <ion-card button (click)="openModal('angular')">
-              <img src="assets/icons/angular.png" alt="Angular" />
-              <ion-card-content class="ion-text-center"
-                >Angular</ion-card-content
-              >
-            </ion-card>
-          </ion-col>
-          <ion-col size="4" class="skill-item">
-            <ion-card button (click)="openModal('react')">
-              <img src="assets/icons/react.png" alt="React" />
-              <ion-card-content class="ion-text-center">React</ion-card-content>
-            </ion-card>
-          </ion-col>
-          <ion-col size="4" class="skill-item">
-            <ion-card button (click)="openModal('javascript')">
-              <img src="assets/icons/javascript.png" alt="JavaScript" />
-              <ion-card-content class="ion-text-center"
-                >JavaScript</ion-card-content
-              >
-            </ion-card>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col size="4" class="skill-item">
-            <ion-card button (click)="openModal('typescript')">
-              <img src="assets/icons/typescript.png" alt="TypeScript" />
-              <ion-card-content class="ion-text-center"
-                >TypeScript</ion-card-content
-              >
-            </ion-card>
-          </ion-col>
-          <ion-col size="4" class="skill-item">
-            <ion-card button (click)="openModal('python')">
-              <img src="assets/icons/python.png" alt="Python" />
-              <ion-card-content class="ion-text-center"
-                >Python</ion-card-content
-              >
-            </ion-card>
-          </ion-col>
-          <ion-col size="4" class="skill-item">
-            <ion-card button (click)="openModal('git')">
-              <img src="assets/icons/git.png" alt="Git" />
-              <ion-card-content class="ion-text-center">Git</ion-card-content>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card-content>
-  </ion-card>
+  <div class="card-wrapper">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Skills</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2" class="skill-item">
+              <ion-card button (click)="openModal('angular')">
+                <div class="icon-wrapper">
+                  <img src="assets/icons/angular.png" alt="Angular" />
+                </div>
+              </ion-card>
+            </ion-col>
+            <ion-col size="2" class="skill-item">
+              <ion-card button (click)="openModal('react')">
+                <div class="icon-wrapper">
+                  <img src="assets/icons/react.png" alt="React" />
+                </div>
+              </ion-card>
+            </ion-col>
+            <ion-col size="2" class="skill-item">
+              <ion-card button (click)="openModal('javascript')">
+                <div class="icon-wrapper">
+                  <img src="assets/icons/javascript.png" alt="JavaScript" />
+                </div>
+              </ion-card>
+            </ion-col>
+            <ion-col size="2" class="skill-item">
+              <ion-card button (click)="openModal('typescript')">
+                <div class="icon-wrapper">
+                  <img src="assets/icons/typescript.png" alt="TypeScript" />
+                </div>
+              </ion-card>
+            </ion-col>
+            <ion-col size="2" class="skill-item">
+              <ion-card button (click)="openModal('python')">
+                <div class="icon-wrapper">
+                  <img src="assets/icons/python.png" alt="Python" />
+                </div>
+              </ion-card>
+            </ion-col>
+            <ion-col size="2" class="skill-item">
+              <ion-card button (click)="openModal('git')">
+                <div class="icon-wrapper">
+                  <img src="assets/icons/git.png" alt="Git" />
+                </div>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
 
   <!-- Interests Section -->
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Interests</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-grid>
-        <ion-row>
-          <ion-col size="4" class="skill-item">
-            <ion-card button (click)="openModal('exercise')">
-              <img src="assets/icons/exercise.png" alt="Exercise" />
-              <ion-card-content class="ion-text-center"
-                >Exercise</ion-card-content
-              >
-            </ion-card>
-          </ion-col>
-          <ion-col size="4" class="skill-item">
-            <ion-card button (click)="openModal('tableTennis')">
-              <img src="assets/icons/tabel tennis.png" alt="Table Tennis" />
-              <ion-card-content class="ion-text-center"
-                >Table Tennis</ion-card-content
-              >
-            </ion-card>
-          </ion-col>
-          <ion-col size="4" class="skill-item">
-            <ion-card button (click)="openModal('gaming')">
-              <img src="assets/icons/gaming.png" alt="Gaming" />
-              <ion-card-content class="ion-text-center"
-                >Gaming</ion-card-content
-              >
-            </ion-card>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col size="4" class="skill-item">
-            <ion-card button (click)="openModal('music')">
-              <img src="assets/icons/music.png" alt="Music" />
-              <ion-card-content class="ion-text-center">Music</ion-card-content>
-            </ion-card>
-          </ion-col>
-          <ion-col size="4" class="skill-item">
-            <ion-card button (click)="openModal('firearms')">
-              <img src="assets/icons/firearms.png" alt="Firearms" />
-              <ion-card-content class="ion-text-center"
-                >Firearms</ion-card-content
-              >
-            </ion-card>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-card-content>
-  </ion-card>
+  <div class="card-wrapper">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Interests</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2" class="skill-item">
+              <ion-card button (click)="openModal('exercise')">
+                <div class="icon-wrapper">
+                  <img src="assets/icons/exercise.png" alt="Exercise" />
+                </div>
+              </ion-card>
+            </ion-col>
+            <ion-col size="2" class="skill-item">
+              <ion-card button (click)="openModal('tableTennis')">
+                <div class="icon-wrapper">
+                  <img src="assets/icons/tabel tennis.png" alt="Table Tennis" />
+                </div>
+              </ion-card>
+            </ion-col>
+            <ion-col size="2" class="skill-item">
+              <ion-card button (click)="openModal('gaming')">
+                <div class="icon-wrapper">
+                  <img src="assets/icons/gaming.png" alt="Gaming" />
+                </div>
+              </ion-card>
+            </ion-col>
+            <ion-col size="2" class="skill-item">
+              <ion-card button (click)="openModal('music')">
+                <div class="icon-wrapper">
+                  <img src="assets/icons/music.png" alt="Music" />
+                </div>
+              </ion-card>
+            </ion-col>
+            <ion-col size="2" class="skill-item">
+              <ion-card button (click)="openModal('firearms')">
+                <div class="icon-wrapper">
+                  <img src="assets/icons/firearms.png" alt="Firearms" />
+                </div>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
 
   <!-- Modal -->
   <ion-modal [isOpen]="isModalOpen" (didDismiss)="isModalOpen = false">

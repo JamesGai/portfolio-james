@@ -35,3 +35,41 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+* {
+  font-family: 'Poppins', sans-serif;
+  color: #e0e0e0;
+}
+
+ion-content {
+  --background: #121212;
+}
+
+ion-toolbar {
+  --background: #1f1f1f;
+  --color: #ffffff;
+  border-bottom: 1px solid #2c2c2c;
+}
+
+ion-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+ion-card {
+  background: #1c1c1c;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  color: #e6e6e6;
+}
+
+ion-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+ion-card-content {
+  font-size: 0.95rem;
+  color: #cfcfcf;
+}
