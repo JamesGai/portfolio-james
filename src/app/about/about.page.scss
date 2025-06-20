@@ -67,10 +67,7 @@ ion-card-title {
   align-items: center;
   height: 100%;
   width: 100%;
-}
-
-ion-col.skill-item {
-  padding: 8px;
+  cursor: default;
 }
 
 ion-card[button] {
@@ -82,7 +79,12 @@ ion-card[button] {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 255, 195, 0.15);
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
+}
+
+ion-card[button]::part(native) {
+  --background-focused: transparent;
+  --background-hover: transparent;
+  --ripple-color: transparent;
 }
 
 ion-card[button]:hover {
@@ -96,5 +98,18 @@ ion-card[button] img {
   height: 55px;
   margin: 0;
   filter: drop-shadow(0 0 3px rgba(0, 255, 195, 0.2));
+}
+
+.interest-item, .interest-item img{
+    cursor: pointer;
+}
+
+.interest-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
 }
 
