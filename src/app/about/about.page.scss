@@ -21,13 +21,17 @@ ion-content {
   line-height: 1.6;
 }
 
+.about-text p {
+  margin-bottom: 12px;
+}
+
 .about-image {
   flex-shrink: 0;
 }
 
 .about-image img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 3px solid #00ffc3;
   box-shadow: 0 0 12px rgba(0, 255, 195, 0.3);
