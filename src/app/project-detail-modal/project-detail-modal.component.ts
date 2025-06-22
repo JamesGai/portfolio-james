@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 export class ProjectDetailModalComponent {
   @Input() title!: string;
   @Input() images!: string[];
-  @Input() goal!: string;
+  @Input() tasks!: string[];
   @Input() techStack!: string[];
   @Input() github!: string;
 

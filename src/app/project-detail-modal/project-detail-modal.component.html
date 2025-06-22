@@ -19,21 +19,33 @@
   </div>
 
   <div class="section">
-    <h3>🎯 Goal</h3>
-    <p>{{ goal }}</p>
+    <ion-card-header>
+      <h3>🎯 Task</h3>
+    </ion-card-header>
+    <ul>
+      <li *ngFor="let task of tasks">
+        {{ task }}
+      </li>
+    </ul>
   </div>
 
   <div class="section">
-    <h3>🧰 Tech Stack</h3>
+    <ion-card-header>
+      <h3>🧰 Tech Stack</h3>
+    </ion-card-header>
     <ul>
       <li *ngFor="let tech of techStack">{{ tech }}</li>
     </ul>
   </div>
 
   <div class="section">
-    <h3>🔗 GitHub</h3>
+    <ion-card-header>
+      <h3>🔗 GitHub</h3>
+    </ion-card-header>
     <ng-container *ngIf="github; else confidential">
-      <a [href]="github" target="_blank">{{ github }}</a>
+      <p>
+        <a [href]="github" target="_blank">{{ github }}</a>
+      </p>
     </ng-container>
     <ng-template #confidential>
       <p>Not available due to confidentiality</p>
