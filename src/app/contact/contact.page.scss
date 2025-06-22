@@ -5,3 +5,34 @@
   border: 3px solid #00ffc3;
   box-shadow: 0 0 12px rgba(0, 255, 195, 0.3);
 }
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+
+.contact-icons a img {
+  width: 128px;
+  height: 128px;
+}
+
+.contact-icons a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.contact-icons a:hover {
+  transform: scale(1.15);
+}
+
+.thank-you {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 1.25rem;
+  color: #cccccc;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
