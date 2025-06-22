@@ -45,149 +45,11 @@
       <ion-card-content>
         <ion-grid>
           <ion-row>
-            <ion-col size="2">
+            <ion-col size="2" *ngFor="let skill of skills">
               <ion-card button>
                 <div class="icon-wrapper">
-                  <img src="assets/icons/angular.png" alt="Angular" />
-                  <p class="icon-label">Angular</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/react.png" alt="React" />
-                  <p class="icon-label">React</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/javascript.png" alt="JavaScript" />
-                  <p class="icon-label">JavaScript</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/typescript.png" alt="TypeScript" />
-                  <p class="icon-label">TypeScript</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/python.png" alt="Python" />
-                  <p class="icon-label">Python</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/git.png" alt="Git" />
-                  <p class="icon-label">Git</p>
-                </div>
-              </ion-card>
-            </ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/cypress.png" alt="Cypress" />
-                  <p class="icon-label">Cypress</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/firebase.png" alt="Firebase" />
-                  <p class="icon-label">Firebase</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/jmeter.png" alt="JMeter" />
-                  <p class="icon-label">JMeter</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/java.png" alt="Java" />
-                  <p class="icon-label">Java</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/.net core.png" alt=".NET core" />
-                  <p class="icon-label">.NET core</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/express.png" alt="Express" />
-                  <p class="icon-label">Express</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/flask.png" alt="Flask" />
-                  <p class="icon-label">Flask</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/c sharp.png" alt="C#" />
-                  <p class="icon-label">C#</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/docker.png" alt="Docker" />
-                  <p class="icon-label">Docker</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/ml.png" alt="Machine Learning" />
-                  <p class="icon-label">ML</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/llm.png" alt="Large Language Model" />
-                  <p class="icon-label">LLM</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/postman.png" alt="Postman" />
-                  <p class="icon-label">Postman</p>
+                  <img [src]="skill.icon" [alt]="skill.label" />
+                  <p class="icon-label">{{ skill.label }}</p>
                 </div>
               </ion-card>
             </ion-col>
@@ -206,51 +68,11 @@
       <ion-card-content>
         <ion-grid>
           <ion-row>
-            <ion-col size="2">
+            <ion-col size="2" *ngFor="let interest of interests">
               <ion-card button>
                 <div class="icon-wrapper">
-                  <img src="assets/icons/exercise.png" alt="Exercise" />
-                  <p class="icon-label">Gym</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/tabel tennis.png" alt="Table Tennis" />
-                  <p class="icon-label">Tabel Tennis</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/gaming.png" alt="Gaming" />
-                  <p class="icon-label">Gaming</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/music.png" alt="Music" />
-                  <p class="icon-label">Music</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/firearms.png" alt="Firearms" />
-                  <p class="icon-label">Firearms</p>
-                </div>
-              </ion-card>
-            </ion-col>
-            <ion-col size="2">
-              <ion-card button>
-                <div class="icon-wrapper">
-                  <img src="assets/icons/cat.png" alt="Cat" />
-                  <p class="icon-label">Cat</p>
+                  <img [src]="interest.icon" [alt]="interest.label" />
+                  <p class="icon-label">{{ interest.label }}</p>
                 </div>
               </ion-card>
             </ion-col>
