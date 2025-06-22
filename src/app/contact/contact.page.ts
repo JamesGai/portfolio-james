@@ -1,16 +1,11 @@
 import { Component } from '@angular/core';
-import {
-  IonHeader,
-  IonToolbar,
-  IonTitle,
-  IonContent,
-} from '@ionic/angular/standalone';
+import { IonicModule } from '@ionic/angular';
 
 @Component({
   selector: 'app-contact',
   templateUrl: 'contact.page.html',
   styleUrls: ['contact.page.scss'],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent],
+  imports: [IonicModule],
 })
 export class ContactPage {
   constructor() {}

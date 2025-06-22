@@ -88,3 +88,13 @@ ion-content::part(scroll) {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.card-wrapper {
+  max-width: 900px;
+  margin: 0 auto 24px auto;
+}
+
+.card-content {
+  padding: 15px;
+  margin-top: 15px;
+}
