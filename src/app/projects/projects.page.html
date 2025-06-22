@@ -1,13 +1,30 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Projects </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="card-wrapper" *ngFor="let project of projects">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ project.title }}</ion-card-title>
+      </ion-card-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Projects</ion-title>
-    </ion-toolbar>
-  </ion-header>
+      <ion-card-content class="project-content">
+        <div class="project-flex">
+          <div class="project-image">
+            <img [src]="project.images[0]" [alt]="project.title" />
+          </div>
+          <div class="project-text">
+            <p>{{ project.description }}</p>
+            <div class="learn-more-wrapper">
+              <ion-button
+                fill="clear"
+                size="small"
+                class="learn-more-btn"
+                (click)="openProjectDetail(project)"
+              >
+                >> Learn More
+              </ion-button>
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>

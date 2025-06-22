@@ -2,6 +2,11 @@ ion-content {
   --background: #121212;
 }
 
+.card-wrapper {
+  max-width: 900px;
+  margin: 0 auto 24px auto;
+}
+
 .about-content {
     padding: 15px;
 }
@@ -85,11 +90,6 @@ ion-card[button] img {
   height: 55px;
   margin: 0;
   filter: drop-shadow(0 0 3px rgba(0, 255, 195, 0.2));
-}
-
-.card-wrapper {
-  max-width: 900px;
-  margin: 0 auto 24px auto;
 }
 
 .icon-wrapper {

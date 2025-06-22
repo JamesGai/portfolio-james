@@ -1,0 +1,37 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>{{ title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="image-slider">
+    <button class="nav-btn left" (click)="prevImage()">←</button>
+    <img
+      [src]="images[currentImageIndex]"
+      alt="{{ title }}"
+      class="project-img"
+    />
+    <button class="nav-btn right" (click)="nextImage()">→</button>
+  </div>
+
+  <div class="section">
+    <h3>🎯 Goal</h3>
+    <p>{{ goal }}</p>
+  </div>
+
+  <div class="section">
+    <h3>🧰 Tech Stack</h3>
+    <ul>
+      <li *ngFor="let tech of techStack">✔ {{ tech }}</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>🔗 GitHub</h3>
+    <a [href]="github" target="_blank">{{ github }}</a>
+  </div>
+</ion-content>
