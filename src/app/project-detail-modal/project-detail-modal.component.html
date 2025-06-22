@@ -26,12 +26,17 @@
   <div class="section">
     <h3>🧰 Tech Stack</h3>
     <ul>
-      <li *ngFor="let tech of techStack">✔ {{ tech }}</li>
+      <li *ngFor="let tech of techStack">{{ tech }}</li>
     </ul>
   </div>
 
   <div class="section">
     <h3>🔗 GitHub</h3>
-    <a [href]="github" target="_blank">{{ github }}</a>
+    <ng-container *ngIf="github; else confidential">
+      <a [href]="github" target="_blank">{{ github }}</a>
+    </ng-container>
+    <ng-template #confidential>
+      <p>Not available due to confidentiality</p>
+    </ng-template>
   </div>
 </ion-content>
