@@ -57,16 +57,22 @@ ion-title {
 }
 
 ion-card {
-  background: #1c1c1c;
+  background-color: #1f1f1f;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  color: #e6e6e6;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  color: #e0e0e0;
 }
 
 ion-card-title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: #ffffff;
+  color: #00ffc3;
+  letter-spacing: 0.5px;
+}
+
+ion-card-header {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #333;
 }
 
 ion-card-content {
