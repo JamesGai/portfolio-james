@@ -21,7 +21,7 @@ export class AboutPage {
     { label: 'Firebase', icon: 'assets/icons/firebase.png' },
     { label: 'JMeter', icon: 'assets/icons/jmeter.png' },
     { label: 'Java', icon: 'assets/icons/java.png' },
-    { label: '.NET core', icon: 'assets/icons/.netcore.png' },
+    { label: '.NET core', icon: 'assets/icons/dotnetcore.png' },
     { label: 'Express', icon: 'assets/icons/express.png' },
     { label: 'Flask', icon: 'assets/icons/flask.png' },
     { label: 'C#', icon: 'assets/icons/csharp.png' },
