@@ -1,8 +1,27 @@
+<!-- Mobile Menu -->
+<ion-menu contentId="main-content" class="mobile-menu">
+  <ion-header> </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item href="/about">About</ion-item>
+      <ion-item href="/projects">Projects</ion-item>
+      <ion-item href="/contact">Contact</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
 <ion-app>
   <ion-header>
     <ion-toolbar>
-      <ion-title>James Gai</ion-title>
-      <ion-buttons slot="end">
+      <!-- Mobile Hamburger (left slot) -->
+      <ion-buttons slot="start" class="show-mobile">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+
+      <ion-title class="title">James Gai</ion-title>
+
+      <!-- Desktop Nav (right slot) -->
+      <ion-buttons slot="end" class="show-desktop">
         <ion-button href="/about">About</ion-button>
         <ion-button href="/projects">Projects</ion-button>
         <ion-button href="/contact">Contact</ion-button>
@@ -10,7 +29,7 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
+  <ion-content id="main-content">
     <ion-router-outlet></ion-router-outlet>
   </ion-content>
 </ion-app>
