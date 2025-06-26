@@ -34,3 +34,27 @@
   color: #00ffc3;
   font-weight: 500;
 }
+
+@media (max-width: 768px) {
+  .project-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-image img {
+    width: 100%;
+    max-width: 360px;
+    display: block;
+    border-radius: 12px;
+  }
+
+  .project-text {
+    text-align: left;
+  }
+
+  .learn-more-wrapper {
+    justify-content: flex-start;
+    margin-top: 12px;
+  }
+}
