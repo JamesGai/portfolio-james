@@ -33,7 +33,7 @@ export class AboutPage {
 
   interests = [
     { label: 'Gym', icon: 'assets/icons/exercise.png' },
-    { label: 'Table Tennis', icon: 'assets/icons/tabel tennis.png' },
+    { label: 'Table Tennis', icon: 'assets/icons/tabeltennis.png' },
     { label: 'Gaming', icon: 'assets/icons/gaming.png' },
     { label: 'Music', icon: 'assets/icons/music.png' },
     { label: 'Firearms', icon: 'assets/icons/firearms.png' },
