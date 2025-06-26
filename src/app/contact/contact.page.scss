@@ -36,3 +36,17 @@
   opacity: 0.9;
   letter-spacing: 0.5px;
 }
+
+@media (max-width: 768px) {
+  .contact-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    justify-items: center;
+  }
+
+  .contact-icons a img {
+    width: 120px;
+    height: 120px;
+  }
+}
