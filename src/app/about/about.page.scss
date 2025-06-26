@@ -82,9 +82,8 @@ ion-card[button] img {
   }
 
   .about-image {
-    float: right;
-    padding-left: 0;
-    margin-left: 0;
+    order: -1;
+    margin-bottom: -15px;
   }
 
   .about-text {
