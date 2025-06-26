@@ -45,7 +45,12 @@
       <ion-card-content>
         <ion-grid>
           <ion-row>
-            <ion-col size="2" *ngFor="let skill of skills">
+            <ion-col
+              size="2"
+              size-sm="4"
+              size-xs="6"
+              *ngFor="let skill of skills"
+            >
               <ion-card button>
                 <div class="icon-wrapper">
                   <img [src]="skill.icon" [alt]="skill.label" />
@@ -68,7 +73,12 @@
       <ion-card-content>
         <ion-grid>
           <ion-row>
-            <ion-col size="2" *ngFor="let interest of interests">
+            <ion-col
+              size="2"
+              size-sm="4"
+              size-xs="6"
+              *ngFor="let interest of interests"
+            >
               <ion-card button>
                 <div class="icon-wrapper">
                   <img [src]="interest.icon" [alt]="interest.label" />
