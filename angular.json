@@ -40,7 +40,7 @@
             "styles": ["src/global.scss", "src/theme/variables.scss"],
             "scripts": [],
             "browser": "src/main.ts",
-            "baseHref": "/portfolio-james/"
+            "baseHref": "./"
           },
           "configurations": {
             "production": {
