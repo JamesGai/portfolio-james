@@ -1,9 +1,12 @@
+<!-- about.page.html -->
 <ion-content [fullscreen]="true" class="ion-padding">
   <!-- Summary Section -->
   <div class="card-wrapper">
     <ion-card>
       <ion-card-header>
-        <ion-card-title>About Me</ion-card-title>
+        <div class="card-title-wrapper">
+          <ion-card-title>About Me</ion-card-title>
+        </div>
       </ion-card-header>
       <ion-card-content class="card-content">
         <div class="about-flex">
@@ -18,10 +21,7 @@
               I’ve worked on everything from building chatbots in Angular and
               Ionic to deploying machine learning models using Docker and AWS.
               I’ve even taught a robot how to gesture naturally for my final
-              year research project — not your average side project. Whether
-              it’s developing full-stack apps, mentoring others, or writing
-              clean code that actually works, I love putting my skills to good
-              use.
+              year research project — not your average side project.
             </p>
             <p>
               I’m always up for a new challenge, a good team, and maybe a game
@@ -40,7 +40,9 @@
   <div class="card-wrapper">
     <ion-card>
       <ion-card-header>
-        <ion-card-title>Skill Set</ion-card-title>
+        <div class="card-title-wrapper">
+          <ion-card-title>Skill Set</ion-card-title>
+        </div>
       </ion-card-header>
       <ion-card-content>
         <ion-grid>
@@ -52,9 +54,11 @@
               *ngFor="let skill of skills"
             >
               <ion-card button>
-                <div class="icon-wrapper">
-                  <img [src]="skill.icon" [alt]="skill.label" />
-                  <p class="icon-label">{{ skill.label }}</p>
+                <div class="icon-card-wrapper">
+                  <div class="icon-wrapper">
+                    <img [src]="skill.icon" [alt]="skill.label" />
+                    <p class="icon-label">{{ skill.label }}</p>
+                  </div>
                 </div>
               </ion-card>
             </ion-col>
@@ -68,7 +72,9 @@
   <div class="card-wrapper">
     <ion-card>
       <ion-card-header>
-        <ion-card-title>Interests</ion-card-title>
+        <div class="card-title-wrapper">
+          <ion-card-title>Interests</ion-card-title>
+        </div>
       </ion-card-header>
       <ion-card-content>
         <ion-grid>
@@ -80,9 +86,11 @@
               *ngFor="let interest of interests"
             >
               <ion-card button>
-                <div class="icon-wrapper">
-                  <img [src]="interest.icon" [alt]="interest.label" />
-                  <p class="icon-label">{{ interest.label }}</p>
+                <div class="icon-card-wrapper">
+                  <div class="icon-wrapper">
+                    <img [src]="interest.icon" [alt]="interest.label" />
+                    <p class="icon-label">{{ interest.label }}</p>
+                  </div>
                 </div>
               </ion-card>
             </ion-col>
